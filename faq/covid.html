@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!--
+        ChWes Restaurant
+        Author: David Yap Sen Yong
+        Date:   11-11-2020
+        
+        Filename: covid.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Chinese,Western, food, ChWes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FAQ|Chwes Restaurant</title>
+        <link href="faq_layout.css" rel="stylesheet"/>
+        <link href="faq_style.css" rel="stylesheet"/>
+        <link href="../../navigation/navigation.css" rel="stylesheet" />
+        <link href="../../navigation/login.css" rel="stylesheet" />
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <!--Javascipt for pop up form(Login)-->
+        <script type="text/javascript">
+            function closeForm(){
+                document.getElementById("loginForm").style.display="none";
+            }
+            function openForm(){
+                document.getElementById("loginForm").style.display="block";
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <!-- centered links -->
+                    <div class="centered_nav" id="sidenav">
+                        <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                        <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                        <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Support</button>
+                            <div class="dropdown_content">
+                                    <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                    <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                    <a href="faq.html">FAQ</a>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Account</button>
+                                <div class="dropdown_content">
+                                    <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                    <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                    
+                                </div>
+                            </li>
+                        </div>
+                        
+                    </div>
+                
+                    <!-- right-alligned links -->
+                    <div class="right_nav">
+                        <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                        <li class="navright" onclick="openForm()" style="cursor:pointer;">
+                            <i class="far   fa-user"></i>
+                        </li>
+                    </div>
+
+                    <!--Phone view-->
+                    <div class=openCloseBar>
+                        <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                        <div id="mySideBar">
+                            
+                            <span onclick="closeSidebar()" class="closeBar">X</span>
+                            
+                            <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html">About us</a></li>
+                            <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Menu</a></li>
+                            <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                            <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                            <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                            <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav> 
+
+            <!--Pop up Login form-->
+            <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+                <form method="post">
+                    <span onclick="closeForm()">
+                        <i class="fa">&#xf00d;</i>
+                    </span>
+                    <br>
+                    <h2 style="text-align:center;">Login Form</h2>
+        
+                    <div class="fillUp">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <div id="rememberMe">
+                            <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                        </div>
+
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Clear">
+
+                        <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                    </div>
+
+                    <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                        New User?<a href="../membership/signUp.html">Sign Up for Free!</a>
+                    </div>
+                </form>
+            </div>
+        </header>
+        
+        <!--Top left corner back icon-->
+        <span style="margin-left:20px;">
+            <a href="faq.html">
+                <img style="width:25px;" src="backIcon.png" alt="back">
+            </a>
+        </span>
+
+        <!--Information for Covid 19-->
+        <h1>ChWes Restaurant FAQ</h1>
+        <section>
+            <h2>Information for COVID-19</h2>
+            Following continued developments and updated guidance from the governments and health authorities, 
+            I wanted to share an update from Chwes Selangor.
+        </section>
+
+        <div id="covid">
+            <ul>
+                <section>
+                    <h3>Continuing to serve communities across the Malaysia</h3>
+                    <ul>
+                        <li>
+                            Our restaurants will remain open for as long as it is safe to do so.
+                            In the last 24 hours it has become clear that we need to temporarily 
+                            change our operations to ensure the wellbeing of our employees and customers 
+                            consistent with the governments’ guidance on social distancing.
+                        </li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Thanks those helping us all</h3>
+                    <ul>
+                        <li>
+                            Whilst it is safe to remain open, we want to do what we can to support those services 
+                        working tirelessly to keep us all safe and well. From this week, in all Malaysia restaurants we 
+                        are offering all emergency services personnel, health and social care workers free drinks,
+                        on sight of their work pass. It is a small token of our appreciation for everything that 
+                        these services are doing and we will continue to keep this under review as government and 
+                        health authority guidance develops.
+                        </li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Keeping you informed</h3>
+                    <ul>
+                        <li>
+                            As this situations evolves, we will continue to keep you updated through email, 
+                            our social media channels and website. We will ensure our restaurant locator reflects 
+                            the best available information relating to any necessary closures or further changes 
+                            to services.
+                        </li>
+                        <li>
+                            Thank you once again for all your supprt in keeping one another safe.<br/>
+                            Shau Yhong Xuan.<br/>
+                            Founder, ChWes Restaurant Malaysia.
+                        </li>
+                    </ul>
+                </section>
+            </ul>
+        </div>
+
+        <!--(Javascript) for phone view-->
+        <script>
+            closeSidebar();
+            function openSidebar() {
+                document.getElementById("mySideBar").style.display = "block";
+            }
+                
+            function closeSidebar() {
+                document.getElementById("mySideBar").style.display = "none";
+            }
+
+        </script>
+        
+        <!--Footer-->
+        <footer>
+            <p>
+                ChWes restaurant is now available online.
+                <br/>
+                The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+                <br/>
+                Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+                Email:<a href="mailto:chwes@gmail.com"> chwes@gmail.com</a>
+            </p> 
+        </footer>
+    </body>
+</html>

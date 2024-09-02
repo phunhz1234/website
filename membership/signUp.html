@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+    <head>
+        <!--
+        ChWes Restaurant
+        Author: David Yap Sen Yong
+        Date:   11-11-2020
+        
+        Filename: signUp.html
+        -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Chinese,Western, food, ChWes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign Up|Chwes Restaurant</title>
+        <link href="signUp.css" rel="stylesheet"/>
+        <link href="../../navigation/navigation.css" rel="stylesheet" />
+        <link href="../membership/logIn_layout.css" rel="stylesheet"/>
+        <link href="../../navigation/login.css" rel="stylesheet" />
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="form.js"></script>
+        <!--Javascipt for pop up form(Login)-->
+        <script type="text/javascript">
+            function closeForm(){
+                document.getElementById("loginForm").style.display="none";
+            }
+            function openForm(){
+                document.getElementById("loginForm").style.display="block";
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--header-->
+        <header>
+            <nav>
+                <ul class="topnav">
+                    
+                    <!-- centered links -->
+                    <div class="centered_nav" id="sidenav">
+                        <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                        <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                        <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Support</button>
+                               <div class="dropdown_content">
+                                    <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                    <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                    <a href="../faq/faq.html">FAQ</a>
+                                </div>
+                            </li>
+                        </div>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Account</button>
+                                <div class="dropdown_content">
+                                    <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                    <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                    
+                                </div>
+                            </li>
+                        </div>
+                        
+                    </div>
+                   
+                    <!-- right-alligned links -->
+                    <div class="right_nav">
+                        <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                        <li class="navright" onclick="openForm()" style="cursor:pointer;">
+                            <i class="far   fa-user"></i>
+                        </li>
+                    </div>
+    
+                    <!--Phone view top nav-->
+                    <div class=openCloseBar>
+                        <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                        <div id="mySideBar">
+                            
+                            <span onclick="closeSidebar()" class="closeBar">X</span>
+                            
+                            <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html">About us</a></li>
+                            <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Menu</a></li>
+                            <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                            <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                            <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                            <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                            <li><a href="../faq/faq.html">FAQ</a></li>
+                            <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav> 
+    
+            <!--Pop up Login form-->
+            <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+                <form method="post">
+                    <span onclick="closeForm()">
+                        <i class="fa">&#xf00d;</i>
+                    </span>
+                    <br>
+                    <h2 style="text-align:center;">Login Form</h2>
+                    
+                    <div class="fillUp">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <div id="rememberMe">
+                            <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                        </div>
+
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Clear">
+
+                        <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                    </div>
+
+                    <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                        New User?<a href="signUp.html">Sign Up for Free!</a>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--Choose delivery to home or office-->
+        <div id="deliveryType">
+            <h2>Delivery to your:</h2>
+            <input type="radio" name="selection" id="house" checked>
+            <label><b>House</b></label>
+            <input type="radio" name="selection" id="office">
+            <label><b>Office</b></label>
+        </div>
+
+        <!--Back Icon-->
+        <div id="prevIcon" style="display:none;">
+            <span>
+                <a href="signUp.html">
+                    <img style="width:25px;" src="../faq/backIcon.png" alt="back">
+                </a>
+            </span>
+        </div>
+
+        <!--Sign Up Information-->
+        <div id="signUpInformation">
+            <!--Address-->
+            <div class="deliveryAddress">
+                <!--Home address-->
+                <div class="deliveryAddress" id="deliveryAddress1" style="display:block;">
+                    <form action="#" method="post">
+                        <div style="text-align:center; background-color:rgb(255,255,255);">
+                            <img src="house.png" alt="house" style="width:100px;">
+                        </div>
+                        <hr>
+                        <div id="box">
+                            <div id="boxSpecial1">
+                                <label>House Number:</label>
+                                <input type="text" name="hseNum" id="hseNum" required>
+                            </div>
+                            <div id="boxSpecial2">
+                                <label>Block:</label>
+                                <input type="text" name="block" id="block">
+                            </div>
+                        </div>
+                        <div id="box">
+                            <label>Street Name:</label>
+                            <input type="text" name="strtName" id="strtName" required>
+                        </div>
+                        <div id="box">
+                            <label>Area:</label>
+                            <input type="text" name="areaName" id="areaName" required>
+                        </div>
+                        <div id="box">
+                            <label>Postcode:</label>
+                            <input type="number" name="postCode" id="postCode" required>
+                        </div>
+                        <div id="box">
+                            <label>State: </label>
+                            <input type="text" name="state" id="state" required>
+                        </div>
+                        <div id="box">
+                            <label>Contact Number:</label>
+                            <input type="number" name="contNum" id="contNum" required>
+                            
+                        </div>
+                        <div class="box1">
+                            <button type="button" class="saveAdd1" id="saveAdd1"><b>Save address</b></button>
+                        </div>
+                    </form>
+                </div>
+                <!--Office address-->
+                <div class="deliveryAddress" id="deliveryAddress2" style="display:none">
+                    <form action="#" method="post">
+                        <div style="text-align:center; background-color:rgb(255,255,255);">
+                            <img src="office.png" alt="house" style="width:100px;">
+                        </div>
+                        <hr>
+                        <div id="box">
+                            <div id="boxSpecial1">
+                                <label>Level:</label>
+                                <input type="text" name="hseNum" id="hseNum" required>
+                            </div>
+                            <div id="boxSpecial2">
+                                <label>Unit:</label>
+                                <input type="text" name="block" id="block">
+                            </div>
+                        </div>
+                        <div id="box">
+                            <label>Building:</label>
+                            <input type="text" name="building" id="building" required>
+                        </div>
+                        <div id="box">
+                            <label>Garden:</label>
+                            <input type="text" name="garden" id="garden" required>
+                        </div>
+                        <div id="box">
+                            <label>City:</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+                        <div id="box">
+                            <label>Company Name: </label>
+                            <input type="text" name="cpnyName" id="cpnyName" required>
+                        </div>
+                        <div id="box">
+                            <label>Department:</label>
+                            <input type="text" name="department" id="department" required>
+                        </div>
+                        <div class="box1">
+                            <button type="submit" class="saveAdd2" id="saveAdd2"><b>Save Address</b></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Sign up form-->
+            <div id="signUpForm" style="display:none;">
+                <form action="#" method="post" >
+                    <div class="container1" >
+                        <h1>Sign Up Form</h1>
+                        
+                        <hr>
+                        
+                        <div class="container2">
+                            <div id="box">
+                                <label><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" required>
+                            </div>
+                            <div id="box">
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+                                <input type="checkbox" id="showPsw" onclick="showPassword()">Show Password
+                                
+                                <div id="pswValid1">
+                                    <div><h4>Password Validation:</h4></div>
+                                    <div class="pswValid">
+                                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                        <p id="number" class="invalid">A <b>number</b></p>
+                                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="box">
+                                <label for="psw-repeat"><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Repeat Password" name="repeatPsw" id="repeatPsw" required>
+                                <input type="checkbox" id="showPsw" onclick="showPassword()">Show Password
+                            </div>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="terms">
+                                By creating an account you agree to our <a href="#" style="color:rgb(128, 191, 255);">Terms & Privacy</a>.
+                            </label>
+                    
+                            <div class="box1">
+                                <button type="submit" class="signupbtn" id="signupbtn"><b>Sign up</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!--Password validation-->
+        <script>
+            var userInput = document.getElementById("psw");
+            var letter = document.getElementById("letter");
+            var capital = document.getElementById("capital");
+            var number = document.getElementById("number");
+            var length = document.getElementById("length");
+            
+            // When the user clicks on the password field, show the message box
+            userInput.onfocus = function() {
+            document.getElementById("pswValid1").style.display = "block";
+            }
+            
+            // When the user clicks outside of the password field, hide the message box
+            userInput.onblur = function() {
+            document.getElementById("pswValid1").style.display = "none";
+            }
+            
+            // When the user starts to type something inside the password field
+            userInput.onkeyup = function() {
+                // Validate lowercase letters
+                var lowerCaseLetters = /[a-z]/g;
+                if(userInput.value.match(lowerCaseLetters)) {
+                    letter.classList.remove("invalid");
+                    letter.classList.add("valid");
+                } 
+                else {
+                    letter.classList.remove("valid");
+                    letter.classList.add("invalid");
+                }
+                
+                // Validate capital letters
+                var upperCaseLetters = /[A-Z]/g;
+                if(userInput.value.match(upperCaseLetters)) {
+                    capital.classList.remove("invalid");
+                    capital.classList.add("valid");
+                } 
+                else {
+                    capital.classList.remove("valid");
+                    capital.classList.add("invalid");
+                }
+                
+                // Validate numbers
+                var numbers = /[0-9]/g;
+                if(userInput.value.match(numbers)) {
+                    number.classList.remove("invalid");
+                    number.classList.add("valid");
+                } 
+                else {
+                    number.classList.remove("valid");
+                    number.classList.add("invalid");
+                }
+                
+                // Validate length
+                if(userInput.value.length >= 8) {
+                    length.classList.remove("invalid");
+                    length.classList.add("valid");
+                } 
+                else {
+                    length.classList.remove("valid");
+                    length.classList.add("invalid");
+                }
+            }
+        </script>
+        
+        <!--Password Toggle (visibility)-->
+        <script>
+            function showPassword(){
+                var a=document.getElementById("psw");
+                var b=document.getElementById("repeatPsw");
+                if(a.type=="password"){
+                    a.type="text";
+                }
+                else{
+                    a.type="password";
+                }
+                
+                if(b.type=="password"){
+                    b.type="text";
+                }
+                else{
+                    b.type="password";
+                }
+            }
+        </script>
+        
+        <!--Phone view -->
+        <script>
+            closeSidebar();
+                function openSidebar() {
+                  document.getElementById("mySideBar").style.display = "block";
+                }
+                
+                function closeSidebar() {
+                  document.getElementById("mySideBar").style.display = "none";
+                }
+        </script>
+
+        <!--Footer-->
+        <footer>
+            <p>
+                ChWes restaurant is now available online.
+                <br/>
+                The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+                <br/>
+                Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+                Email:<a href="mailto:chwes@gmail.com"> chwes@gmail.com</a>
+            </p> 
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+html{
+    background-color:rgb(255,255,255);
+}
+
+body{
+    background: url('../faq/background.jpg') no-repeat center center/cover;
+	width:100%;
+	background-attachment: fixed;
+}
+
+/*Sign Up Form styles and Delivery Adress styles*/
+input[type="text"], input[type="password"], input[type="number"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:6px;
+}
+
+#deliveryAddress1 form, #deliveryAddress2 form{
+    margin:100px;
+    padding:50px;
+    background-color: rgb(242,242,242);
+}
+
+.deliveryAddress label{
+    font-weight:bold;
+}
+
+#signUpForm form{
+    margin:100px;
+    background-color: rgb(242,242,242);
+}
+
+#boxSpecial1{
+    width:48%; 
+    float:left;
+    padding-right:15px;
+    padding-bottom:25px;
+}
+#boxSpecial2{
+    width:48%; 
+    float:left;
+    padding-left:15px;
+    padding-bottom:25px;
+}
+
+.container2{
+    margin:0 40px;
+}
+
+.container2 input[placeholder]{
+    font-size:15px;
+}
+
+#box{
+    padding-bottom:25px;
+}
+
+.box1{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:right;
+}
+
+.box1 button{
+    background-color:rgb(128, 191, 255);
+    color:rgb(255,255,255);
+    padding:20px;
+    border-radius:20px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+}
+
+.box1 button:hover{
+    background-color:rgb(26, 140, 255);
+}
+.container1 h1{
+    text-align:center; 
+    padding-top:30px;
+}
+
+#deliveryType{
+    text-align:center; 
+    font-size:20px;
+}
+
+#prevIcon{
+    margin-left:100px;
+}
+
+/*Password validation*/
+#pswValid1{
+    display:none;
+    border:1px solid rgb(166,166,166);
+    margin:10px;
+    padding-left:10px;
+    padding-top:10px;
+    border-radius:20px;
+}
+
+p.valid{
+    color:rgb(51, 204, 51);
+
+}
+
+p.invalid{
+    color:rgb(255,51,0);
+}
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+/*only for (screen) and also the maximum width of the screen = 480px*/
+@media (max-width:480px){
+    #deliveryAddress1 form, #deliveryAddress2 form{
+        margin:30px;
+        padding:20px;
+    }
+
+    #boxSpecial1{
+        width:43%; 
+    }
+    #boxSpecial2{
+        width:44%; 
+    }
+
+    .box1 button{
+        width:100%;
+    }
+    #prevIcon{
+        margin-left:30px;
+    }
+    #signUpForm form{
+        margin:30px;
+        background-color: rgb(242,242,242);
+    }
+    .container2{
+        margin:0 20px;
+    }
+}
+

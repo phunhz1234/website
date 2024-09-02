@@ -1,0 +1,51 @@
+/*Layout format*/
+html{
+    background-color:rgb(255,255,255);
+}
+
+body{
+    display:flex;
+    flex-flow: column wrap;
+    background: url('background.jpg') no-repeat center center/cover;
+	width:100%;
+	background-attachment: fixed;
+}
+
+
+img{
+    width:100%;
+}
+
+/*FlipBox layout*/
+.flipBox{
+    width: 31.5%;
+    height:250px;
+    perspective: 1000px;
+    float:left;
+    margin:10px;
+}
+
+/*Format for explanation in more explanation page*/
+section{
+    margin:0 10px;
+}
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+/*only for (screen) and also the maximum width of the screen = 480px*/
+@media only screen and (max-width:480px){
+    footer{
+        background-color:rgb(230,230,230);
+        font-size:15px;
+    }
+    /*Flip Box format in phone view*/
+    .flipBox{
+        width:93%;
+        height: 150px;
+        perspective: 1000px;
+        display:flex;
+        flex-wrap:row wrap;
+    }
+}
