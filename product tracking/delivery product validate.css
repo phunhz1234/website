@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(255, 255, 180);
+ }
+
+ input#orderNumber:focus:valid {
+   background: rgb(220, 255, 220) url(okay.png) right/contain no-repeat;
+}
+
+input#orderNumber:invalid{
+   background: rgb(255, 230, 230) url(warning.png) right/contain no-repeat;
+}

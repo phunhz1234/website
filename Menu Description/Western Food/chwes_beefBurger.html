@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>Beef Burger</title>
+    <link href="../chwes_menuDescription.css" rel="stylesheet" />
+</head>
+<body>
+    <img src="../../Menu/Western Food/chwes_beefBurger.jpg" alt="Beef Burger"/>
+    
+    <h1>Beef Burger</h1>
+    <div class="menu2" id="description" style="text-align:center">
+        Who doesn’t love a big, tender, juicy beef burger?
+    </div>
+    <div class="menu2" id="price" >
+        RM15.50
+    </div>
+    <hr style="margin-top:5%">
+
+    <div class="Option" id="remove">
+        <p><b>Remove from Beef Burger (Optional)</b></p>
+        <input type="checkbox" id="cheeseBox" name="noCheese" />      
+        <label for="cheeseBox">No Cheese  + RM0.00</label>
+        </br></br>
+        <input type="checkbox" id="sauceBox" name="noVege" />          
+        <label for="sauceBox">No Vege + RM0.00</label> 
+    </div>
+    <div class="Option" id="extra">
+        <p><b>Extra for Beef Burger (Optional)</b></p>
+        <input type="checkbox" id="cheeseBox" name="doubleCheese" />      
+        <label for="cheeseBox">Extra Cheese + RM0.94</label>
+        </br></br>
+        <input type="checkbox" id="sauceBox" name="doubleSauce" />          
+        <label for="sauceBox">Extra Vege + RM0.94</label>        
+    </div>
+             
+    </br></br>
+    <p class="instruction"><b>Special instructions:</b></p>
+    <label for="instruction"> Please let us know if you are allergic to anything or if we need to avoid anything.</label>
+    <input type="text" id="instructions" name="instructions" placeholder="Eg. No Cheese"><br><br>
+     
+    <p class="quantityBox"><b>Quantity : </b>
+        <input name="beefBurgerQuantity" id="quantityBox" type="number" min="1" max="10" value="1" />
+    </p>
+    
+    <button class="addToCart"onclick="myFunction()">Add To Cart</button>
+    <button class="backToMenu" onclick="document.location='../../Menu/chwes_westernFood.html'">Back To Menu</button>
+  
+    <script>
+        function myFunction() {
+            alert("Succesfully added !");
+        }
+    </script>
+</body>
+</html>

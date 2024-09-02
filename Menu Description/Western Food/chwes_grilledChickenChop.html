@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Chinese,Western, food, ChWes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grilled Chicken Chop</title>
+    <link href="../chwes_menuDescription.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu2" >
+    <img src="../../Menu/Western Food/chwes_grilledChickenChop.jpg" alt="Grilled Chicken Chop" />
+    <div class="menu2" id="title" >
+    <h1>Grilled Chicken Chop</h1>
+    <div class="menu" id="description">
+        Delicious grilled chicken covered in a rich, bold sauce.
+    </div>
+    <div class="menu2" id="price" >
+        RM17.00
+    </div>
+    <hr style="margin-top:2%">
+
+    <div class="Option" id="remove">
+        <p><b>Choose one sauce : </b></p>
+        <input type="radio" id="mushroom" name="sauceBox"value="mushroom" checked />          
+        <label for="mushroom">Mushroom</label> 
+        </br></br>
+        <input type="radio" id="BlackPepper" name="sauceBox"value="blackPepper" />          
+        <label for="blackPepper">Black Pepper</label> 
+        </br></br>
+        <input type="radio" id="cheese" name="sauceBox"value="cheese" />        
+        <label for="cheese">Cheese</label>
+        </br></br>
+        <p><b>Choose one side : </b></p>
+        <input type="radio" id="frenchFries" name="sideBox"value="frenchFries" checked />          
+        <label for="frenchFries">French Fries</label> 
+        </br></br>
+        <input type="radio" id="cheeseWedges" name="sideBox"value="cheeseWedges" />          
+        <label for="cheeseWedges">Cheese Wedges</label> 
+    </div>
+     
+    </br></br>
+    <p class="instruction"><b>Special instructions:</b></p>
+    <label for="instruction"> Please let us know if you are allergic to anything or if we need to avoid anything.</label>
+    <input type="text" id="instructions" name="instructions" placeholder="Eg. No Cheese"><br><br>
+
+    <p class="quantityBox"><b>Quantity : </b>
+        <input name="beefBurgerQuantity" id="quantityBox" type="number" min="1" max="10" value="1" />
+    </p>
+
+    <button class="addToCart"onclick="myFunction()">Add To Cart</button>
+    <button class="backToMenu" onclick="document.location='../../Menu/chwes_westernFood.html'">Back To Menu</button>
+  
+    <script>
+        function myFunction() {
+            alert("Succesfully added !");
+        }
+    </script>
+</body>
+</html>

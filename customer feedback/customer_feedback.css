@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+body{
+   letter-spacing: 1px;
+   width:100%;
+}
+
+
+/*body-image*/
+img.top_image
+{display:block;
+ width: 100%;
+ height: auto;
+ margin-left:25px;
+ border:8px dotted rgb(99,99,99);
+}
+
+/*Body nav part*/
+.nav{
+   display:block;
+   float:left;
+   width:100px;
+   height:100px;
+   margin-left:5px;
+   letter-spacing:normal !important;
+}
+
+.nav > nav > ul{
+    list-style-type: none;
+    padding-left: 0px;
+    background-color: rgb(189, 184, 147);
+    border:3px solid rgb(189, 184, 147);
+    border-radius: 8px;
+    float:left;
+ }
+
+p > a{
+text-decoration: underline !important;}
+
+ul > li > a,p > a
+{  
+   display: block;
+   color: rgb(0,0,0);
+   text-decoration: none;
+   line-height:30px;
+}
+
+nav > ul> li > a:hover 
+{  background-color: #555;
+   color: rgb(255,255,255);
+   border-radius: 8px;
+
+}
+
+link a:hover{
+   background-color: #555;
+   color: rgb(255,255,255);
+}
+
+  /*Body style*/
+h1{margin-top:100px;}
+
+/*Review part*/
+.feedback{
+   width:1200px;
+   height:600px;
+   margin:25px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.chwes_review{
+   background-color:rgb(227,227,227);
+   float:left;
+   width: 800px;
+   height:500px;
+   border:10px groove rgb(30, 88, 156);
+   border-radius: 8px;
+   margin-left:10px;
+   overflow: scroll;
+}
+
+.comment{
+   width:200px;
+   height:500px;
+   line-height: 2;
+   float:right;
+   border:7px solid rgb(147, 189, 170);
+   border-radius: 8px;
+   margin-right:35px;
+   margin-left:5px;
+}
+
+
+/*feedback form*/
+#form{
+   border-radius: 5px;
+   background-color: rgb(227,227,227);
+   line-height: 2.5;
+   text-align: center;
+   border:10px solid rgb(62, 88, 176);
+   width:700px;
+   margin-top:40px;
+   margin-left: 300px;
+}
+
+textarea{
+   border-radius: 4px;
+   max-width: 100%;
+}
+
+input[type=text] ,input[type=email]{
+   width: 130px;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   background-color: rgb(255,255,255);
+   transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus ,input[type=email]:focus{
+   width: 300px;
+   border:2px solid rgb(182, 200, 242);
+}
+
+#form  input[type=submit],input[type=reset]
+{width: 100px;
+   height:30px;
+   background-color:rgb(255,255,255);
+   border:3px solid rgb(62, 88, 176);
+   border-radius: 4px;
+   margin-bottom:20px;
+}
+
+#form  input[type=submit]:hover,input[type=reset]:hover{
+   background-color:rgb(177, 200, 250);
+}
+
+#form  input[type=submit]:active ,input[type=reset]:active{
+   background-color:rgb(153, 175, 224);
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+}
+#question{
+   margin:auto;
+   margin-top:-150px;
+}
+
+
+/*phone view*/
+@media (max-width:970px){
+   h1{
+      text-align:center;
+   }
+   .custFeedback img.top_image{
+      width:95%;
+      height: auto;
+      margin-left:5px;
+   }
+
+   .feedbackSub .top_image{
+      width:85%;
+   }
+   
+   .nav,.chwes_review,.comment{
+      margin-left:10px;
+      margin-top:10px;
+   }
+
+   .nav{
+      width:100px;
+      float:none;
+   }
+   
+   .chwes_review{
+      float:none;
+      width:360px;
+      height:800px;
+   }
+
+   .comment{
+      float: left;
+      width:360px;
+      height:300px;
+      
+   }
+
+   #form{
+      width:90%;
+      float:left;
+      margin-left:15px;
+      border:5px solid rgb(62, 88, 176);
+   }
+
+   textarea{
+      width:400px;
+   }
+
+   footer{
+      float:left;
+      margin-top:20px;
+   }
+}
+

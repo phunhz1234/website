@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>Value Set Meal</title>
+    <link href="chwes_menuDescription.css" rel="stylesheet" />
+   
+</head>
+<body>
+    
+    
+    <h1>Value Set Meal</h1>
+  
+    <div class="menu2" id="price" >
+        RM9.90
+    </div>
+   <hr style="margin-top:2%">
+
+        <div class="Option" id="choose"required>
+            <p><b> Step 1: Pick a Meal </b></p>
+            <input type="radio" id="eggFriedRice" name="mealBox"value="eggFriedRice" checked/>          
+            <label for="eggFriedRice">Egg Fried Rice </label> 
+            </br></br>
+            <input type="radio" id="cabonara" name="mealBox"value="cabonara" />          
+            <label for="cabonara">Cabonara</label> 
+            </br></br>
+            <input type="radio" id="noodleSoup" name="mealBox"value="noodleSoup" />        
+            <label for="noodleSoup">Noodle Soup</label>
+            </br></br>
+
+            <p><b>Step 2: Pick a Drinks  </b></p>
+            <input type="radio" id="lemonTea" name="drinkBox"value="lemonTea" checked/>          
+            <label for="lemonTea">Lemon Tea</label> 
+            </br></br>
+            <input type="radio" id="greenTea" name="drinkBox"value="greenTea" />          
+            <label for="greenTea">Green Tea</label> 
+            </br></br>
+            <input type="radio" id="mineralWater" name="drinkBox"value="mineralWater" />          
+            <label for="mineralWater">Mineral Water</label> 
+
+            </br></br>
+            <p><b>Add RM3 to get snack: (Optional)</b></p>
+            <input type="radio" id="macarons" name="snackBox"value="macarons" />          
+            <label for="macarons">Macarons</label> 
+            </br></br>
+            <input type="radio" id="frenchFries" name="snackBox"value="frenchFries" />          
+            <label for="frenchFries">French Fries</label> 
+            </br></br>
+            <input type="radio" id="lavaCake" name="snackBox"value="lavaCake" />          
+            <label for="lavaCake">Lava Cake</label> 
+        </div>
+
+        </br></br>
+        <p class="instruction"><b>Special instructions:</b></p>
+        <label for="instruction"> Please let us know if you are allergic to anything or if we need to avoid anything.</label>
+        <input type="text" id="instructions" name="instructions" placeholder="Eg. No Cheese"><br><br>
+        
+        <p class="quantityBox"><b>Quantity : </b>
+            <input name="beefBurgerQuantity" id="quantityBox" type="number" min="1" max="10" value="1" />
+        </p>
+         
+        <button class="addToCart"onclick="myFunction()">Add To Cart</button>
+        <button class="backToMenu" onclick="document.location='../Menu/chwes_valueSetMeal.html'">Back To Menu</button>
+    
+        <script>
+            function myFunction() {
+                alert("Succesfully added !");
+            }
+        </script>
+
+</body>
+</html>

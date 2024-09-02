@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>Curry Noodle Soup</title>
+    <link href="../chwes_menuDescription.css" rel="stylesheet" />
+</head>
+<body>
+    <img src="../../Menu/Chinese Food/chwes_curryNoodleSoup.jpeg" alt="Curry Noodle Soup" />
+    
+    <h1>Curry Noodle Soup</h1>
+    <div class="menu2" id="description">
+        The curry soup served egg, noodles and cilantro. 
+        So cozy, comforting and fragrant – plus, it’s suitable for any night of the week!
+    </div>
+    <div class="menu2" id="price" >
+        RM10.00
+    </div>
+    <hr style="margin-top:2%">
+
+    <p class="instruction"><b>Special instructions:</b></p>
+    <label for="instruction"> Please let us know if you are allergic to anything or if we need to avoid anything.</label>
+    <input type="text" id="instructions" name="instructions" placeholder="Eg. No Cheese"><br><br>
+
+    <p class="quantityBox"><b>Quantity : </b>
+        <input name="beefBurgerQuantity" id="quantityBox" type="number" min="1" max="10" value="1" />
+    </p>
+
+    <button class="addToCart"onclick="myFunction()">Add To Cart</button>
+    <button class="backToMenu" onclick="document.location='../../Menu/chwes_chineseFood.html'">Back To Menu</button>
+  
+    <script>
+        function myFunction() {
+            alert("Succesfully added !");
+        }
+    </script>
+</body>
+</html>

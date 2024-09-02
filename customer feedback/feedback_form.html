@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Chinese,Western, food, ChWes" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Feedback Submittion|Customer feedback|ChWes Restaurant</title>
+<link href="../../navigation/navigation.css" rel="stylesheet" />
+<link href="../../navigation/login.css" rel="stylesheet" />
+<link href="customer_feedback.css" rel="stylesheet"/>
+<link href="feedback_form.css" rel="stylesheet"/>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+           
+            <ul class="topnav">
+                
+                <div class="centered_nav" id="sidenav">
+                    <!-- centered links -->
+                    <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="customer_feedback.html">Customer Feedback</a>
+                                <a href="../contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+               
+                <div class="right_nav"><!-- right-alligned links -->
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer;">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                    
+                </div>
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="feedbackSub">
+        <h1>FEEDBACK SUBMITION</h1>
+        <img class="top_image" src="beachside.jpg" alt="image of beachside"/>
+    </div>
+
+    <div class="feedbackSub">
+        <div id="form">
+            <h2>Feedback Form</h2>
+
+            <form name="submit" onsubmit="return validateForm()">
+                <b>Please enter your</b> <br>
+                <strong>Last name:</strong><input type="text" id="lname" name="lname" placeholder="Tan,Liew,Emily"><br>
+                Are you Mr or Mrs?
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female <br>
+                What is the date you came to our restaurant?
+                <input type="date" id="date" name="date"><br>
+                Please provide your <b>email</b>:
+                <input type="email" id="email" name="email">
+                
+                <table id="question">
+                <caption><strong>How was your experience?</strong></caption><br>
+                <tr>
+                <td>Quality of food:</td>
+                <td><input type="radio" id="excellent" name="qltoffood" value="excellent" required>Excellent</td>
+                <td><input type="radio" id="good" name="qltoffood" value="good">Good</td>
+                <td><input type="radio" id="fair" name="qltoffood" value="fair">Fair</td>
+                <td><input type="radio" id="poor" name="qltoffood" value="poor">Poor</td> <br>
+                </tr>
+                <tr>
+                <td>Portion size:</td>
+                <td><input type="radio" id="excellent" name="portionoffood" value="excellent" required>Excellent</td>
+                <td><input type="radio" id="good" name="portionoffood" value="good">Good</td>
+                <td><input type="radio" id="fair" name="portionoffood" value="fair">Fair</td>
+                <td><input type="radio" id="poor" name="portionoffood" value="poor">Poor</td> <br>
+                </tr>
+                <tr>
+                <td>Service:</td>
+                <td><input type="radio" id="excellent" name="service" value="excellent" required>Excellent</td>
+                <td><input type="radio" id="good" name="service" value="good">Good</td>
+                <td><input type="radio" id="fair" name="service" value="fair">Fair</td>
+                <td><input type="radio" id="poor" name="service" value="poor">Poor</td> <br>
+                </tr> 
+                <tr>
+                <td>Cleanliness:</td>
+                <td><input type="radio" id="excellent" name="cleanliness" value="excellent" required>Excellent</td>
+                <td><input type="radio" id="good" name="cleanliness" value="good">Good</td>
+                <td><input type="radio" id="fair" name="cleanliness" value="fair">Fair</td>
+                <td><input type="radio" id="poor" name="cleanliness" value="poor">Poor</td> <br>
+                </tr>
+                <tr>
+                <td>Overall Satisfaction:</td>
+                <td><input type="radio" id="excellent" name="satisfaction" value="excellent" required>Excellent</td>
+                <td><input type="radio" id="good" name="satisfaction" value="good">Good</td>
+                <td><input type="radio" id="fair" name="satisfaction" value="fair">Fair</td>
+                <td><input type="radio" id="poor" name="satisfaction" value="poor">Poor</td> 
+                </tr>
+            </table>
+            <br>
+
+                <b>Write your comment here:</b><br>
+                <textarea id="content" name="content"rows="20" cols="80" placeholder="Your comment to our restaurant/food/service.Thank you!"></textarea><br>
+                Do you wish to receive email(promotion notification) from us? :
+                <input type="radio" id="yes" name="promotion">Yes
+                <input type="radio" id="no" name="promotion">No<br>
+                <input type="reset" value="RESET">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <script>
+
+
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySideBar").style.display = "block";
+        }
+            
+        function closeSidebar() {
+            document.getElementById("mySideBar").style.display = "none";
+        }
+
+        function validateForm() {
+        var x = document.forms["submit"]["lname"].value;
+        if (x == "") {
+            alert("Please enter your last name...T-T");
+            return false;
+        }
+        else{
+            alert("Thank you!We'll reply to you soon!")
+        }
+        }
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+
+    </script>
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>   
+</body>
+</html>
