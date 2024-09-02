@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+
+
+
+
+
+/*Structure Styles*/
+body { 
+  min-width: 320px;
+  width: 100%;
+  background-image:url(../Menu/chwes_backgroundImage.jpg);
+  background-size:100%;
+  background-color: #cccccc;
+  height: auto;
+}
+
+  
+
+/*Navigation Styles*/
+#choice nav {
+	display: table;
+	width: 100%;
+}
+#choice nav > ul {
+	display: table-row;
+}
+#choice nav > ul > li {
+  display: table-cell;
+  width:16.66%;
+	text-align: center;
+}
+
+#choice nav a {
+  font-size: 25px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;	
+}
+
+#choice nav a:link, nav a:visited {
+	color:black;
+	text-decoration: none;
+}
+/*Hover changed*/
+#choice a:hover, #choice a:active {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none; margin-top:145px;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/*Banner Styles*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size:50px
+
+}
+.banner{
+  display:block;
+  position: relative;
+  margin-top:10%;
+}
+
+.banner img{
+  margin:auto;
+  width:40%;
+  height:auto;
+  max-width:100%;
+
+}
+/*Section styles*/
+h1{
+  font-size:50px;
+  text-align:center;
+}
+h3{
+  font-size:50px;
+  font-family:'Brush Script MT', 'Brush Script Std', cursive;
+  text-align:center;
+  margin:5px 0px 30px;
+}
+hr {
+  border: 1px solid grey;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Block Styles*/
+  .block {
+  background-color:linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  margin-top:30px;
+  margin-bottom:10px;
+
+}
+
+
+/*Image Style*/
+.menu{
+  margin-top:50px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1500px;
+ 
+}
+  img {
+    width:100%;
+    height:250px;
+  display:block;   
+  max-width:100%;
+  }
+
+.centered{
+  font-size:40px;
+  font-family:"Comic Sans MS", cursive,sans-serif;
+}
+/*Create image side by side*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: relative;
+  }
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ /*Block Styles*/
+ .block {
+    background-color:linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ /*Order*/
+ .bigImage img{
+    width:70%;
+    height:400px;
+    margin-left:150px;
+    margin-bottom:30px;
+ }
+ #Order{
+      width:30px;
+      height:30px;
+      margin:30px;
+      display:right;
+      cursor: pointer;
+ }
+.title{
+  font-size:40px;
+  text-align:center;
+  margin-bottom:20px;
+}
+ .word{
+   font-size:25px;
+   text-align:center;
+ }
+ .price{
+   text-align:right;
+   font-size:35px;
+ }
+ .Option{
+    font-size:30px;
+   margin-left:30px;
+ }
+ label{
+  font-size:25px;
+}
+
+ input[type="submit"] {
+  height: 50px;
+  width: 200px;
+  font-size:25px;
+  margin-left:75%;
+  margin-top:20px;
+}
+input#quantityBox{
+  text-align:center;
+  font-size:18px;
+  width:100px;
+  height:40px;
+  margin-top:70px;
+
+}
+.button{
+  margin-top:4%;
+  font-size:25px;
+  margin-bottom:10%;
+}
+.button a:link,.button a:visited {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button a:hover,.button a:active {
+  background-color:rgb(242, 242, 242);
+}
+
+  /*make picture more clear when smaller the screen*/
+  @media only screen and (max-width: 900px) {
+    
+    .column img{
+      width: 100%;
+      height:200px;
+  }
+  
+  }
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+@media only screen and (max-width: 480px) {
+  h3{
+    font-size:30px;
+  }
+  .banner img{
+    width:40%;
+    height:100px;
+  }
+  .centered{
+    font-size:25px;
+  }
+   .menu{
+     width:90%;
+   }
+  .column img{
+     width: 100%;
+     height:100px;
+  }
+  #choice nav a{
+    font-size:15px;
+  }
+  .block{
+  font-size:15px;
+  }
+  .button{
+    font-size:15px;
+    margin-right:5%;
+    margin-bottom:15%;
+  }
+  .button a:link,.button a:visited{
+    padding: 5px 5px;
+  }
+
+}
+
+@media only screen and (max-width: 977px){
+  .mySlides {
+    margin-top:0px;
+  }
+  .banner{
+    margin-top:0px;
+  }
+}
