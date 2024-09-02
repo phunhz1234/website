@@ -1,0 +1,138 @@
+@charset "utf-8";
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('beachside.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+.data{
+    
+    margin-top: 17%;
+    margin-left: 20%;
+    margin-bottom: -17%;
+    display: flex;
+	flex-wrap:wrap;
+	width: 60%;
+	height: 490px;
+	background: radial-gradient(circle at top left,transparent 340px, rgba(255,255,255,.5)),radial-gradient(circle at bottom right, transparent 340px, rgba(255,255,255,.5));
+	color: rgb(0,0,0);
+    text-align:center;
+
+}
+
+.data i{
+    padding-left:48%;
+    padding-top:5%;
+    font-size:90px;
+}
+
+.data h1{
+    margin-top:-6%;
+    margin-left:25%;
+    margin-right:20%;
+    font-size:25pt;
+}
+
+.data p{
+    margin-top:-10%;
+    margin-left:30%;
+    margin-right:20%;
+    font-size:15pt;
+}
+
+
+@media only screen and (max-width:1200px){
+    .data{
+        margin-top: 25%;
+        margin-left: 12%;
+        margin-bottom: 1%;
+        width: 80%;
+        height: 490px;
+
+    }
+}
+@media only screen and (max-width:700px){
+    .data{
+        margin-top: 35%;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+        height: 490px;
+
+    }
+}
+
+@media only screen and (max-width:600px){
+    .data{
+        margin-top: 35%;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+        height: 490px;
+
+    }
+    .data i{
+        padding-left:42%;
+        padding-top:15%;
+        font-size:80px;
+    }
+    
+    .data h1{
+        margin-top:-6%;
+        margin-left:20%;
+        margin-right:20%;
+        font-size:20pt;
+    }
+    
+    .data p{
+        margin-top:-18%;
+        margin-left:15%;
+        margin-right:20%;
+        font-size:13pt;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .data{
+        margin-top: 45%;
+
+    }
+
+}
+@media only screen and (max-width:350px){
+    .data{
+        margin-top: 60%;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+        height: 400px;
+
+    }
+    .data i{
+        padding-left:42%;
+        padding-top:15%;
+        font-size:70px;
+    }
+    
+    .data h1{
+        margin-top:-25%;
+        margin-left:20%;
+        margin-right:20%;
+        font-size:15pt;
+        color:rgb(255,255,255);
+    }
+    
+    .data p{
+        margin-top:-25%;
+        margin-left:15%;
+        margin-right:20%;
+        font-size:11pt;
+        color:rgb(255,255,255);
+    }
+}
+
+

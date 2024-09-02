@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+    
+
+    body { 
+        width: 100%;
+        background:url('../Menu/chwes_backgroundImage.jpg');
+    }
+
+/*section part*/
+    #descIntro{
+        display:block;
+        background:rgb(255, 255, 204);
+        width:50%;    
+        float:right;
+        clear:both;
+    }
+    #descHist{
+        float:left;
+        display:block;
+        background:rgb(230, 255, 255);
+        width:50%;
+        margin-right:5%;
+        margin-top:5%;
+        
+ 
+    }
+    #descLogo{
+        background:rgb(255, 204, 255);
+        display:block;
+        width:50%;
+        float:right;
+        margin-top:5%;
+    
+    }
+    #descChef1{
+        float:left;
+        display:block;
+        background:rgb(204, 255, 230);
+        width:50%;
+        margin-top:8%;
+        margin-right:5%;
+    }
+    #descChef2{
+        background:rgb(255, 217, 179);
+        display:block;
+        width:50%;
+        float:right;
+        margin-top:5%;
+    }
+    #introImg img{
+        width:auto;
+        height:300px;
+        margin-top:3%;
+        margin-left:13%;
+        margin-bottom:2%;
+        max-width:100%;
+    }
+     
+    #intro{
+        font-size:5vw;
+        font-size:25px;
+        margin:1% 5% 5% 5%;
+        text-align:left;
+        font-family:'papyrus',Verdana, sans-serif;
+    }
+    #history{
+        font-size:25px;
+        margin: 5% 5% 5% 5%;
+        text-align:left;
+        font-family:'papyrus',Verdana, sans-serif;
+    }
+    
+   
+    #logo{
+        font-size:25px;
+        text-align:center;
+        font-family:'papyrus',Verdana, sans-serif;
+    }
+    #left img{
+        max-width:100%;
+        width:auto;
+        height:350px;
+        margin-top:5%;
+        margin-bottom:2%;
+        margin-left:5%;
+
+    }
+   #right img{
+        max-width:100%;
+        width:auto;
+        height:350px;
+        margin-top:5%;
+        margin-left:5%;
+    }
+    #chef1{
+        font-size:25px;
+        text-align:center;
+        font-family:'papyrus',Verdana, sans-serif;
+        margin:3% 5% 5% 5%;
+    }
+    #chef2{
+        font-size:25px;
+        text-align:center;
+        font-family:'papyrus',Verdana, sans-serif;
+        margin:5% 5% 5% 5%;
+    }
+    /*font part*/
+    #descIntro h1{
+        font-family:'Comic Sans MS', Arial, sans-serif;
+        text-align:center; 
+        font-size:40px;    
+
+    }
+    #descHist h1{
+        font-family:'Comic Sans MS', Arial, sans-serif;
+        text-align:center;
+        font-size:40px;
+    }
+    #descLogo h1{
+        font-family:'Comic Sans MS', Arial, sans-serif;
+        font-size:40px;
+        margin-top:3%;
+        text-align:center;
+    }
+
+    /*Adjust the chef section*/
+
+    @media only screen and (max-width: 1235px) {
+        #descChef1{
+            float:right;
+        }
+        #descIntro,#descLogo,#descChef2{
+            margin-right:5%;
+        }
+       
+    }
+
+    
+
+  
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+    @media only screen and (max-width: 800px) {
+   
+        #descIntro,#descHist,#descLogo,#descChef1,#descChef2{
+           float:initial;
+           width: 90%;
+           height:auto;
+           margin-left:auto;
+           margin-right:auto;
+       }
+       #introImg img,#left img,#right img{
+        margin-left:5%;
+        margin-right:5%;
+        width: 90%;
+       }   
+   
+    }

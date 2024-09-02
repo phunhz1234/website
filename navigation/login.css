@@ -1,0 +1,67 @@
+/*Pop up (Log in)*/
+#loginForm{
+    background-color:rgb(255,255,255);
+}
+#loginForm form{
+    box-shadow: 0 10px 10px rgb(204,204,204);
+}
+
+#loginForm input[type=text], #loginForm input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:6px;
+}
+
+#loginForm input[type=submit] ,#loginForm input[type=reset]{
+    background-color:rgb(128, 191, 255);
+    color: rgb(255,255,255);
+    padding: 14px 20px;
+    margin: 10px;
+    border:none;
+    border-radius:20px;
+    border-collapse: collapse;
+    cursor: pointer;
+    width: 48%;
+    float:left;
+    font-size:18px;
+}
+
+#loginForm input[type=submit]:hover ,#loginForm input[type=reset]:hover{
+    opacity: 0.8;
+}
+
+
+#loginForm .fillUp {
+    padding: 16px;
+}
+
+
+#loginForm span[onclick]{
+    float:right;
+    font-size:24px; 
+    padding:10px;
+    cursor:pointer;
+}
+
+#loginForm span[onclick]:hover{
+    opacity:0.3;
+}
+
+/* ===============================
+	Mobile Devices: 0 to 1032px 
+   ===============================
+*/
+/*only for (screen) and also the maximum width of the screen = 1032px*/
+@media (max-width:1032px){
+	/*For Phone LogIn*/
+	#loginForm input[type=submit] {
+        width:94%;
+    }
+    #loginForm input[type=reset]{
+        display:none;
+	}
+}

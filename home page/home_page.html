@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Chinese,Western, food, ChWes" />
+<title>ChWes Restaurant</title>
+<link href="home_styles.css" rel="stylesheet" />
+<link href="home_layout.css" rel="stylesheet" />
+<link href="../../navigation/navigation.css" rel="stylesheet" />
+<link href="../../navigation/login.css" rel="stylesheet" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+
+                <div class="centered_nav">
+                    <!-- centered links -->
+                    <li style="font-size:1.2vw;"><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li style="font-size:1.2vw;"><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li ><a  href="home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../reservation/reservation/reservation.html">Reservation</a>
+                                
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+                <!-- right-alligned links -->
+                <div class="right_nav">
+                    <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+                <!--phone view-->
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../reservation/reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                    
+                </div>
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+    
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <div id="rememberMe">
+                        <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+	    
+
+    </header>
+
+    <i class='fas fa-angle-double-up'  onclick="topFunction()" id="up" style='font-size:24px'></i>
+    <!--Page 1-->
+    <section id=page1>
+        
+        <h1> CHWES</br> RESTAURANT <i class="fas fa-utensils"></i></h1>
+        <p><b>PERFECTIONS IS OUR SPECIALTY</br>Open daily from 10 am to 10 pm</b></p>
+        
+    </section>
+    <!--Page 2-->
+    <section id="page2">
+
+        <div class="box" id="box1">
+            <h1>Dine-in</h1>
+            <p>Our restaurant has a confy and clean layout.Make your reservations now. </p>
+            <a href="../reservation/reservation/reservation.html" >Reservation</a>
+        </div>
+
+        <div class="box" id="box2">
+            <h1>Take-away</h1>
+            <p>Satisfying your craving just got easier</p>
+            <a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Order now</a>
+        </div>
+
+        <div class="box" id="box3">
+            <h1>Delivery</h1>
+            <p>Satisfying your craving just got easier</p>
+            <a href="../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Order now</a>
+        </div>
+      
+    </section>
+    <!--Page 3-->
+    <section id="page3">
+
+        <h1>Top ordered food</h1>
+        
+        <a class="fade-in" href="../../PHUN HUEY ZHI/Menu/chwes_westernFood.html"><img src="pictures/steak.jpg" alt=""></a>
+        <a class="fade-in" href="../../PHUN HUEY ZHI/Menu/chwes_chineseFood.html"><img src="pictures/dumpling.jpg" alt=""></a>
+        <a class="fade-in" href="../../PHUN HUEY ZHI/Menu/chwes_snack.html"><img src="pictures/macaron.jpg" alt=""></a>
+
+    </section>
+    <!--Page 4-->
+    <section id="page4">
+
+        <h1>Preview</h1>
+        <p>Here's a preview video of some of our food sold in our restaurant.</p>
+        <video controls>
+            <source src="video/makan makan.mp4" type="video/mp4">
+            <source src="video/My Video.webm" type="video/webm">
+            <track kind="captions" label="Video Captions" src="video/video_caption.vtt" default />
+                
+            <p>Upgrade your browser to HTML5.</p>
+        </video>
+
+       
+
+    </section>
+
+    <script>
+        /* Phone view js*/
+        closeSidebar();
+        function openSidebar() {
+          document.getElementById("mySideBar").style.display = "block";
+        }
+        
+        function closeSidebar() {
+          document.getElementById("mySideBar").style.display = "none";
+        }
+
+        /*scroll up page*/
+        var upbutton = document.getElementById("up");
+
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                upbutton.style.display = "block";
+            } else {
+                upbutton.style.display = "none";
+            }
+        }
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        /*Log in form js*/
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+        
+        }
+
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+        }
+        
+
+    </script>
+
+    <footer>
+        <p>
+            ChWes restaurant is now available online.
+            <br/>
+            The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+            <br/>
+            Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+            Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+        </p> 
+    </footer>
+   
+</body>
+</html>

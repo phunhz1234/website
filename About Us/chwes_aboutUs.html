@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+    <!DOCTYPE html>
+    <html>
+        
+       
+    <head>
+    
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Chinese,Western, food, ChWes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>About ChWes Restaurant</title>
+        <link href="../../navigation/navigation.css" rel="stylesheet" />
+        <link href="../../navigation/login.css" rel="stylesheet" />
+        <link href="chwes_aboutUs.css" rel="stylesheet" />
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+               
+                <ul class="topnav">
+                    
+                    <div class="centered_nav" id="sidenav">
+                        <!-- centered links -->
+                        <li><a href="chwes_aboutUs.html" class="cool-link">About us</a></li>
+                        <li><a href="../Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                        <li><a href="../../harini/home page/home_page.html" id="home" >ChWes</a></li>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Support</button>
+                               <div class="dropdown_content">
+                                    <a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                    <a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                    <a href="../../David/faq/faq.html">FAQ</a>
+                                </div>
+                            </li>
+                        </div>
+    
+                        <div class="dropdown">
+                            <li><button class="dropdownbtn">Account</button>
+                                <div class="dropdown_content">
+                                    <a href="../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                    <a href="../../harini/reservation/reservation/reservation.html">Reservation</a>
+                                    
+                                </div>
+                            </li>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="right_nav"><!-- right-alligned links -->
+                        <li class="navright"><a href="../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                        <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                            <i class="far   fa-user"></i>
+                        </li>
+                    </div>
+
+                    <div class=openCloseBar>
+                        <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                        <div id="mySideBar">
+                            
+                            <span onclick="closeSidebar()" class="closeBar">X</span>
+                            
+                            <li><a href="chwes_aboutUs.html">About us</a></li>
+                            <li><a href="../Menu/chwes_valueSetMeal.html">Menu</a></li>
+                            <li><a href="../../harini/reservation/reservation/reservation.html">Reservation</a></li>
+                            <li><a href="../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                            <li><a href="../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                            <li><a href="../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                            <li><a href="../../David/faq/faq.html">FAQ</a></li>
+                            <li><a href="../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                            
+                        </div>
+                        
+                    </div>
+
+                    
+    
+                </ul>
+            </nav>
+            <!--Pop up Login form-->
+            <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+                <form method="post">
+                    <span onclick="closeForm()">
+                        <i class="fa">&#xf00d;</i>
+                    </span>
+                    <br>
+                    <h2 style="text-align:center;">Login Form</h2>
+        
+
+                    <div class="fillUp">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                        <div id="rememberMe">
+                            <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                        </div>
+
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Clear">
+
+                        <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                    </div>
+
+                    <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                        New User?<a href="../../David/membership/signUp.html">Sign Up for Free!</a>
+                    </div>
+                </form>
+            </div> 
+        </header>
+      
+
+        <div class="headerImg">
+            <img src="headerImg.jpg" alt="Coffee" style="width:100%;height:auto;max-width:100%;max-height:auto;margin-bottom:30px;"/>
+        </div>
+          
+        <div class="aboutUs" id="introImg">
+            <img src="restaurantPic.jpg" alt="Restaurant Picture">
+            <section class="description" id="descIntro">
+            <h1>Welcome to ChWes Restaurant !</h1>
+                <div class="aboutUs" id="intro">
+                    ChWes Restaurant is one of the top restaurants in Malaysia.Our Restaurant was located near 
+                    beachside and theinterior design is instagrammable. Our restaurant combine two different famous dining 
+                    cultures which are ChineseFood and Western Food. A famous food critic Jeffrey Steingarten had been 
+                    invited to our restaurant to visit and received a five star rating.
+                </div>
+            </section>
+        </div>
+        
+        <section class="description" id="descHist">
+        <h1>Restaurant History</h1>
+            <div class="aboutUs" id="history">
+            Our founder - Andrew have a dream of opening a restaurant since he was young. He believes that food 
+            can bring happiness to everyone. He hope every customer can relax when they come to his restaurant. With this 
+            dream, he works hard to earn money. Although it is difficult to realize his dream, he never gave up. Finally,
+            ChWes Restaurant founded in year 2020.
+        </div>
+        </section>
+       
+        <section class="description" id="descLogo">
+            <h1 >"Perfection is our specialty"</h1>
+            <div class="aboutUs" id="logo">
+                Our restaurant is committed to provide each of its guests with the highest quality food and beverage. We 
+                serve all types of chinese and western food that can overwhelm your taste buds. We will exceed your expection 
+                with satisfy your neccessary and serve you wholeheartedly. A smile on customer face is the best gift of our 
+                restaurant.
+            </div>
+        </section>
+
+        <div class="aboutUs" id="left" style="clear:both;">
+            <img  src="chefPic1.jpg" alt="Chef James Back"/>
+            <section class="description" id="descChef1">
+            <div class="aboutUs" id="chef1">
+                <span style=font-family:Calibri,Arial;font-size:35px>1.Chef James Beck</span>  <br>
+                Chef James Beck is a most famous Western Food Chef in the world. He also is a michelin 5 star chef from
+                New York. With many years of fine dining restaurantexperience and is passionate about beautiful, 
+                delicious food. He is obsessed with using onlythe finest ingredients. 
+            </div>
+            </section>
+        </div>
+
+        <div class="aboutUs" id="right">
+            <img src="chefPic2.jpg" alt="Chef James Back"/>
+            <section class="description" id="descChef2">
+                <div class="aboutUs" id="chef2">
+                <span style=font-family:Calibri,Arial;font-size:35px>2.Chef Adam Leong </span><br>
+                    Chef Adam Leong is at fifth position among top Chinese chefs.
+                    He also known as "X-treme Chinese cooking".
+                    He is the champion of World Chef Championship Malaysia 2020.
+                </div>
+            </section>
+        </div>
+        <script>
+            closeSidebar();
+            function openSidebar() {
+                document.getElementById("mySideBar").style.display = "block";
+            }
+                
+            function closeSidebar() {
+                document.getElementById("mySideBar").style.display = "none";
+            }
+            function closeForm(){
+                document.getElementById("loginForm").style.display="none";
+            }
+            function openForm(){
+                    document.getElementById("loginForm").style.display="block";
+            }
+        </script>
+
+        <footer>
+            <p>
+                ChWes restaurant is now available online.
+                <br/>
+                The 2200-22-2200 hotline has been started from 1st July 2020 onwards.
+                <br/>
+                Phone:<a href="tel:2200-20-2200" >2200-20-2200</a> &emsp;
+                Email:<a href="chwes@gmail.com"> chwes@gmail.com</a>
+            </p> 
+        </footer>
+            
+</body>
+
+</html>

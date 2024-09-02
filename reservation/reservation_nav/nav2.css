@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+html,body{
+	height: 100%;
+	width: 100%;
+	
+}
+/* reservation navigation*/
+
+.reservation_nav {
+	width:100%;
+
+	max-width: 520px;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:0;
+	
+	padding-top:25px;
+	padding-bottom:25px;
+    background-color: rgb(238, 238, 238) !important;
+    position: absolute;
+	
+	min-height: 10px;
+}
+
+.reservation_center {
+    float:left;
+	position:absolute;
+    left: 43%;
+    top: 7.5%;
+	transform: translate(-50%);	
+	font-family: 'Titillium Web', sans-serif;
+   
+    
+}
+.reservation_center ul {
+    list-style-type: none;
+} 
+.reservation_center li {
+    list-style-type: none;
+    float: left;
+    text-transform: uppercase;
+
+} 
+.reservation_center a {
+    font-family: 'Titillium Web', sans-serif;
+	display: block;
+    font-weight: bold;  
+}
+.reservation_center a::after {
+    content:'';
+	display: block;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	width:0;
+	transition: width .3s;
+}
+.reservation_center a:hover::after{
+	width:100%;
+	transition: width .3s;
+	
+}
+
+@media only screen and (max-width:400px){
+	.reservation_center a{
+		font-size:9pt;
+	}
+}

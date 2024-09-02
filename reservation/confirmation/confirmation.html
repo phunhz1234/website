@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Chinese,Western, food, ChWes" />
+
+<title>ChWes Restaurant</title>
+
+
+<link href="confirm_layout.css" rel="stylesheet" />
+<link href="../../../navigation/navigation.css" rel="stylesheet" />
+<link href="../reservation_nav/nav2.css" rel="stylesheet" />
+<link href="../../../navigation/login.css" rel="stylesheet" />
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <!-- centered links -->
+                <div class="centered_nav"> 
+                    <li><a href="../../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html" class="cool-link">About us</a></li>
+                    <li><a href="../../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html" class="cool-link">Menu</a></li>
+                    <li><a href="../../home page/home_page.html" id="home" >ChWes</a></li>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Support</button>
+                           <div class="dropdown_content">
+                                <a href="../../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a>
+                                <a href="../../../shau yhong xuan/contact us/contact_us.html">Contact us</a>
+                                <a href="../../../David/faq/faq.html">FAQ</a>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="dropdown">
+                        <li><button class="dropdownbtn">Account</button>
+                            <div class="dropdown_content">
+                                <a href="../../../waichong/product tracking/delivery product.html">Order tracking</a>
+                                <a href="../reservation/reservation.html">Reservation</a>
+                               
+                            </div>
+                        </li>
+                    </div>
+                    
+                </div>
+                <!-- right-alligned links -->
+                <div class="right_nav"> 
+                    <li class="navright"><a href="../../../waichong/add in cart/add to cart.html"><i class="fas   fa-shopping-cart"style="font-size:20px;"></i></a></li>
+                    <li class="navright" onclick="openForm()" style="cursor:pointer; ">
+                        <i class="far   fa-user"></i>
+                    </li>
+                </div>
+                <!-- Phone view links -->
+                <div class=openCloseBar>
+                    <button class="openBar" onclick="openSidebar()">&#9776;</button>
+                    <div id="mySideBar">
+                        
+                        <span onclick="closeSidebar()" class="closeBar">X</span>
+                        
+                        <li><a href="../../../PHUN HUEY ZHI/About Us/chwes_aboutUs.html">About us</a></li>
+                        <li><a href="../../../PHUN HUEY ZHI/Menu/chwes_valueSetMeal.html">Menu</a></li>
+                        <li><a href="../reservation/reservation.html">Reservation</a></li>
+                        <li><a href="../../../waichong/product tracking/delivery product.html">Order tracking</a></li>
+                        <li><a href="../../../shau yhong xuan/customer feedback/customer_feedback.html">Customer Feedback</a></li>
+                        <li><a href="../../../shau yhong xuan/contact us/contact_us.html">Contact us</a></li>
+                        <li><a href="../../../David/faq/faq.html">FAQ</a></li>
+                        <li><a href="../../../waichong/add in cart/add to cart.html"><i class="fas fa-shopping-cart" style="font-size:20px;"> </i><b>  SHOPPING CART</b></a></li>
+                        
+                    </div>
+                    
+                </div>
+                
+            </ul>
+            <!--Navigation for reservation page-->
+            <ul class="reservation_nav" id="reser_nav">
+                <div class="reservation_center">
+                    
+                    <ul>
+                        <li>
+                            <a href="../info/info.html">info</a>
+                        </li>
+                        <li>
+                            <a href="../reservation/reservation.html">Reservation</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+            </ul>
+        </nav> 
+        <!--Pop up Login form-->
+        <div id="loginForm" class="pop-upForm" style="display:none; background-color:rgb(255,255,255);">
+            <form method="post">
+                <span onclick="closeForm()">
+                    <i class="fa">&#xf00d;</i>
+                </span>
+                <br>
+                <h2 style="text-align:center;">Login Form</h2>
+
+                <div class="fillUp">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <div id="rememberMe">
+                    <input type="checkbox" name="remember" id="rmb" checked > Remember Me
+                    </div>
+
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+
+                    <div class="psw" style="text-align:right;">Forgot <a href="#">password?</a></div>
+                </div>
+
+                <div class="newUser" style="text-align:center; padding-bottom:10px;">
+                    New User?<a href="../../../David/membership/signUp.html">Sign Up for Free!</a>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <section class="data">
+        <i class='far fa-frown-open' ></i>
+
+        <h1>Sorry, We're currently not accepting reservations online.</h1>
+        <p>Please call us to complete your reservation: (800)-800-0000</p>
+
+
+
+    </section> 
+ 
+    <script>
+        /*Phone view navigation js*/
+        closeSidebar();
+        function openSidebar() {
+          document.getElementById("mySideBar").style.display = "block";
+          document.getElementById("reser_nav").style.display="none";
+        }
+        
+        function closeSidebar() {
+          document.getElementById("mySideBar").style.display = "none";
+          document.getElementById("reser_nav").style.display="block";
+        }
+        /*Log in js*/
+        function closeForm(){
+            document.getElementById("loginForm").style.display="none";
+            document.getElementById("reser_nav").style.display="block";
+        }
+        function openForm(){
+            document.getElementById("loginForm").style.display="block";
+            document.getElementById("reser_nav").style.display="none";
+        }
+    </script>
+    
+    
+</body>
+
+</html>

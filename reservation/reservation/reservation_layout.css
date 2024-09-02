@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* Page Body Styles */
+html,body{
+	height: 100%;
+	width:100%;
+
+}
+
+body {
+
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin: 0;
+
+	background-image:url("beachside.jpg");
+	background-repeat: no-repeat !important;
+	background-size: 100% 100% !important;
+	background-attachment: fixed;
+}
+
+
+
+
+/* Reservation styles*/
+
+.reservation{
+	height:100%;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	color: rgb(0, 0, 0);
+	box-sizing:border-box;
+}
+
+.reservation_content{
+	display:flex;
+	flex-direction:column;
+	background: #fff;
+	height:400px;
+	width: 680px;
+	padding: 2% 2% 4% 2%;
+	
+}
+
+.question{
+	width:30%;
+	margin-top:2.2%;
+	font-weight:bold;
+	font-size:13pt;
+}
+
+.form-row{
+	display:flex;
+	flex-direction:row;
+	width:95%;
+	margin:0 auto;
+	color:rgb(0,0,0);
+
+}
+.form-button{
+	display:flex;
+	flex-direction:row;
+	width:95%;
+	margin:0 auto;
+	color:rgb(0,0,0);
+
+}
+#date{
+	margin-right:5%;
+	width:35%;
+}
+#time{
+
+	width:35%;
+}
+form input{
+	display:block;
+	width:80%;
+	margin:15px 12px;
+	padding:5px;
+	font-size: 15px;
+	font-family:'Poppins', sans-serif;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #eee;
+	font-weight:300;
+
+}
+
+.ans, form input::placeholder{
+	color: #9a9a9a;
+
+}
+
+form input[type=submit],form input[type=button]{
+	color:#fff;
+	background: rgb(6, 151, 248);
+	padding:12px 0;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+@media only screen and (max-width:992px){
+    .reservation_content{
+        grid-template-columns:100%;
+    }
+}
+
+@media only screen and (max-width:715px){
+    .reservation_content{
+		width: 90%;
+		font-size:100px;
+	}
+}
+@media only screen and (max-width:600px){
+
+	.reservation h1{
+		height:5%;
+		margin-top:35%;
+	}
+
+    .reservation_content{
+		width: 95%;
+		height:500px;
+		font-size:100px;
+		padding: 2% 2% 8% 2%;
+	}
+
+	.form-row{
+		display:flex;
+		flex-direction:column;
+		width:95%;
+
+	
+	}
+	#date{
+		width:65%;
+	}
+	#time{
+		width:60%;
+	}
+	
+}
+@media only screen and (max-width:450px){
+
+    .reservation_content{
+		width: 95%;
+		height:550px;
+		font-size:100px;
+		padding: 2% 2% 8% 2%;
+	}
+	
+	
+}
+@media only screen and (max-width:415px){
+
+    .reservation h1{
+		height:5%;
+		margin-top:47%;
+	}
+	
+	
+}
+@media only screen and (max-width:400px){
+
+	.reservation h1{
+		height:5%;
+		margin-top:30%;
+	}
+
+    .reservation_content{
+		width: 95%;
+		height:550px;
+		font-size:100px;
+		padding: 2% 2% 8% 2%;
+	}
+	
+	
+}
+@media only screen and (max-width:375px){
+
+	.reservation h1{
+		height:5%;
+		margin-top:80%;
+	}
+
+    
+	
+	
+}
+
+@media only screen and (max-width:320px){
+
+	.reservation h1{
+		height:5%;
+		margin-top:110%;
+	}
+
+	
+}
+
+
